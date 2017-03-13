@@ -17,7 +17,7 @@ public class Start {
 	private static void createAndShowGUI() {
 	    JFrame f = new JFrame("Swing Paint Demo");
 	    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    f.add(new Window());
+	    f.add(new Canvas());
 	    f.pack();
 	    f.setVisible(true);
 	}
