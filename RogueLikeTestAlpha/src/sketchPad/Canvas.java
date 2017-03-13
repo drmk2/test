@@ -41,7 +41,7 @@ public class Canvas extends JPanel {
 		});
 	}
 	
-
+	
 	
 	public Dimension getPreferredSize() {
         return new Dimension(500,500);
@@ -49,6 +49,9 @@ public class Canvas extends JPanel {
 	
 	public void paintComponent(Graphics g) {
         super.paintComponent(g);
+        g.setColor(new Color(255,0,0));
+        g.fillRect(0, 0, getPreferredSize().width, getPreferredSize().height);
+        g.setColor(new Color(0,0,255));
         g.drawLine(mouseXorg, mouseYorg, mouseX, mouseY);
 //      g.drawLine(getPreferredSize().width/2, getPreferredSize().height/2, mouseX, mouseY);
 
