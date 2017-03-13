@@ -50,6 +50,7 @@ public class Canvas extends JPanel {
 	public void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawLine(mouseXorg, mouseYorg, mouseX, mouseY);
+//      g.drawLine(getPreferredSize().width/2, getPreferredSize().height/2, mouseX, mouseY);
 
         
     }
