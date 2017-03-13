@@ -13,7 +13,7 @@ public class Window extends JPanel {
 	}
 	
 	public Dimension getPreferredSize() {
-        return new Dimension(250,200);
+        return new Dimension(512,512);
     }
 	
 	public void paintComponent(Graphics g) {
