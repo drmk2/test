@@ -31,17 +31,22 @@ public class Canvas extends JPanel {
         		mouseY = e.getY();
         		repaint();
 			}
+			public void mouseDragged(MouseEvent e) {
+				mouseX = e.getX();
+        		mouseY = e.getY();
+        		repaint();
+			}
 		});
 		
 	}
 	
 	public Dimension getPreferredSize() {
-        return new Dimension(250,200);
+        return new Dimension(500,500);
     }
 	
 	public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawLine(50, 50, mouseX, mouseY);
+        g.drawLine(getPreferredSize().width/2, getPreferredSize().height/2, mouseX, mouseY);
         
     }
 	
