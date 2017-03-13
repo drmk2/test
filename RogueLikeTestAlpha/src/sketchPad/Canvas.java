@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 
 import javax.swing.JPanel;
 
@@ -23,6 +24,15 @@ public class Canvas extends JPanel {
         		repaint();
         	}
         });
+		
+		addMouseMotionListener(new MouseMotionAdapter() {
+			public void mouseMoved(MouseEvent e) {
+				mouseX = e.getX();
+        		mouseY = e.getY();
+        		repaint();
+			}
+		});
+		
 	}
 	
 	public Dimension getPreferredSize() {
