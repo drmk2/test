@@ -38,8 +38,8 @@ public class Canvas extends JPanel {
         		mouseY = e.getY();
         		repaint();
 			}
-			});
-			}
+		});
+	}
 	
 
 	
